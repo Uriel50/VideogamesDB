@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Videogames DB</string>
+    <string name="juego_guardado">Juego guardado exitosamente</string>
+    <string name="titulo">Título</string>
+    <string name="valoracion">Valoración</string>
+    <string name="a_o">Año</string>
+    <string name="no_hay_registros">¡No hay registros!</string>
+    <string name="agregrar_elemento">Agregrar elemento</string>
+    <string name="imagen">Imagen</string>
+    <string name="t_tulo_pelicula">Título pelicula</string>
+    <string name="g_nero">Género</string>
+    <string name="val">Val</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Header"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/movieheader" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTitle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/titulo"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:startIconDrawable="@drawable/baseline_movie_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTextSpinnerSex"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_genre"
+            android:outlineAmbientShadowColor="@color/white"
+            />
+
+        <Spinner
+            android:id="@+id/SpinnerGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAssessment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/valoracion"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:startIconDrawable="@drawable/baseline_star_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietAssessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilYear"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/a_o"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:startIconDrawable="@drawable/baseline_calendar_today_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
